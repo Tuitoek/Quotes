@@ -1,11 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
-/* body{
-  background-image:url("https://wallpapercave.com/wp/wp2453622.jpg");
-  background-size:cover;
-  background-repeat:none;
-  font-family: 'Allura', cursive;
-}
+@import "~bootstrap/dist/css/bootstrap.css";
 .panel{
   color: black;
   font-size: 60px;
@@ -23,7 +17,7 @@ p{
 }
 .btn{
   background-color: black;
-} */
+}
 .quotes{
   float:right;
 }
