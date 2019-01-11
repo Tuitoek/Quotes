@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <style type="text/css">
+      body{
+        background-image:url("https://wallpapercave.com/wp/wp2453566.jpg");
+      background-size:cover;
+      background-repeat:none;
+    }
+    </style>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <title>Quotes</title>
   </head>
   <body>
-    <div class="container">
-     <div class="header" style="background-color:black">
-         <h1 align="center" style="color:white"
-         >Quotes</h1>
-     </div>
-     <br>
-     <div class="button">
-       <button (click)="showForm" type="button" name="button">Add<span class="glyphicon glyphicon-plus"></span></button>
-     </div>
-
-
-
+    <div class="container-fluid">
+      <div class="panel panel-primary">
+       <div class="panel-heading">
+           <h1 align="center" style="color:white"
+           >Quotes</h1>
+       </div>
+       </div>
+       <br>
+       <p>Click the button to write quote!</p>
+       <div class="btn btn-primary">
+         <button style="color:black"(click)="showForm" type="button" name="button">Add<span class="glyphicon glyphicon-plus"></span></button>
+       </div>
+       <app-quotes-form></app-quotes-form>
     </div>
+
+
 
   </body>
 </html>
