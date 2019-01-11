@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { FontSizeDirective } from './font-size.directive';
+import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
-    FontSizeDirective
+    FontSizeDirective,
+    QuotesFormComponent
   ],
   imports: [
     BrowserModule,
