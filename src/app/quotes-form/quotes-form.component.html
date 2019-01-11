@@ -9,7 +9,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <form #quotesForm='ngForm'*ngIf="hide">
+      <form #quotesForm='ngForm' *ngIf="hide">
         <div class=" group">
 
           <label id="name">Enter Your Name </label>
@@ -26,6 +26,9 @@
         <button (click)="addQuote" class="btn btn-primary" name="button">Post Quote</button>
       </form>
 
+    </div>
+    <div class="btn btn-primary">
+      <button style="color:black" (click)="showForm()" type="button" name="button">Add<span class="glyphicon glyphicon-plus"></span></button>
     </div>
   </div>
 </body>

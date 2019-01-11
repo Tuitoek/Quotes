@@ -1,6 +1,37 @@
 /* You can add global styles to this file, and also import other style files */
-body{
-  background-image:url("https://wallpapercave.com/wp/wp2453566.jpg");
-background-size:cover;
-background-repeat:none;
+@import "~bootstrap/dist/css/bootstrap.css"
+/* body{
+  background-image:url("https://wallpapercave.com/wp/wp2453622.jpg");
+  background-size:cover;
+  background-repeat:none;
+  font-family: 'Allura', cursive;
+}
+.panel{
+  color: black;
+  font-size: 60px;
+  opacity: 0.7;
+  font-family: 'Allura', cursive;
+}
+.panel-heading h1{
+  font-size: 60px;
+  font-weight: bolder;
+}
+p{
+  font-size: 40px;
+  font-family: 'Allura', cursive;
+  font-weight: bolder;
+}
+.btn{
+  background-color: black;
+} */
+.quotes{
+  float:right;
+}
+.quotes ul li {
+  text-decoration-style: none;
+}
+.quotes{
+  font-size: 30px;
+  font-family: 'Allura', cursive;
+  font-weight: bolder;
 }
