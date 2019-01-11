@@ -17,9 +17,16 @@
        </div>
        <br>
        <p>Click the button to write quote!</p>
-       <div class="quotes">
+       <div class="vote">
          <ul>
-           <li *ngFor="let quote of quotes">{{quote.name}}</li>
+           <li *ngFor="let quote of quotes">{{quote.name}}<br>
+             <div class="vote">
+             <button type="button" name="button">Like</button>
+             <button type="button" name="button">unlike</button>
+             </div>
+             <br>
+             <button type="button" name="button">Delete</button>
+           </li>
          </ul>
        </div>
        <app-quotes-form></app-quotes-form>
