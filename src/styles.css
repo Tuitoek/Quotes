@@ -33,3 +33,15 @@ p{
   display:flex;
   justify-content: space-around;
 }
+li{
+  width:500px;
+  height:200px;
+  padding: 0px;
+  text-decoration: none;
+  border: 1px solid blue;
+  border-radius: 10px;
+  font-size: 20px;
+  list-style-type: none;
+  font-family: 'Handlee', cursive;
+
+}
