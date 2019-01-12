@@ -29,3 +29,7 @@ p{
   font-family: 'Allura', cursive;
   font-weight: bolder;
 }
+.content{
+  display:flex;
+  justify-content: space-around;
+}
