@@ -7,13 +7,21 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { FontSizeDirective } from './font-size.directive';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
+import { QuoteDetailsComponent } from './quote-details/quote-details.component';
+import { HighlightPipe } from './highlight.pipe';
+import { HighlightDirective } from './highlight.directive';
+import { DatePipe } from './date.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     FontSizeDirective,
-    QuotesFormComponent
+    QuotesFormComponent,
+    QuoteDetailsComponent,
+    HighlightPipe,
+    HighlightDirective,
+    DatePipe
   ],
   imports: [
     BrowserModule,
