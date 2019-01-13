@@ -15,7 +15,7 @@
           <label id="name">Enter Your Name </label>
           <br>
           <br>
-          <input type="text" name="" value="" style="float:left">
+          <input type="text"style="float:left" >
           <br>
           <br>
           <label>Enter your quote</label>
@@ -23,10 +23,11 @@
           <textarea name="name" rows="8" cols="60"></textarea>
           <br>
         </div>
-        <button (click)="addQuote" class="btn btn-primary" name="button">Post Quote</button>
+        <button (click)="addQuote()" class="btn btn-primary" name="button">Post Quote</button>
       </form>
 
     </div>
+    <br>
     <div class="btn btn-primary">
       <button style="color:black" (click)="showForm()" type="button" name="button">Write quote<span class="glyphicon glyphicon-plus"></span></button>
     </div>

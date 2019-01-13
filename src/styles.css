@@ -30,7 +30,7 @@
 }
 li{
   font-size: 20px;
-  list-style-type: none;
+  list-style-type:lower-roman;
   font-family: 'Handlee', cursive;
 
 }

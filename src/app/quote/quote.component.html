@@ -25,17 +25,17 @@
 
       <ul>
 
-        <li *ngFor="let quote of quotes"> <app-quote-details> <p>{{quote.author}}</p> <br> <p>{{quote.time}}</p> </app-quote-details>
-          {{quote.name}} <br>
+        <li *ngFor="let quote of quotes,let index = i"> <app-quote-details> [quote]='quote' </app-quote-details>
+        {{quote.name}}<br>
           <div class="vote">
-            <button type="button"(click)="addVote()" name="button">Like</button>
+            <button type="button"(click)="addVote($event,1)" name="button">Like</button>
             <p class="addVote">0</p>
-            <button type="button" (click)="reduceVote()"
+            <button type="button" (click)="reduceVote($event,1)"
            name="button">unlike</button>
            <p>0</p>
           </div>
 
-          <button type="button" name="button">Delete</button>
+          <button (delete) = 'quoteDelete(true)'> Delete Quote </button>
         </li>
 
       </ul>

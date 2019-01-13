@@ -10,6 +10,8 @@ export class QuotesFormComponent implements OnInit {
    showForm(){
      this.hide = !this.hide;
    }
+
+  
   constructor() { }
 
   ngOnInit() {
