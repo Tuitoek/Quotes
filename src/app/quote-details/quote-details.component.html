@@ -5,8 +5,24 @@
     <title></title>
   </head>
   <body>
-    <!-- <p>{{quote.name}}</p> -->
-    <!-- <p>Author : {{quote.description}}</p>
-    <p> Date : {{quote.date}}</p> -->
+ <div *ngFor='let quote of quotes'>
+   <ul>
+     <li>
+       <p >Author : {{quote.description}}</p>
+       <p> Date : {{quote.date | date}}</p>
+       <p>{{quote.name}}</p> <br>
+
+     <div class="vote">
+       <button type="button"(click)="addVote($event,1)" name="button">Like</button>
+       <p class="addVote">0</p>
+       <button type="button" (click)="reduceVote($event,1)"
+      name="button">unlike</button>
+      <p>0</p>
+     </div>
+
+     <button (delete) = 'quoteDelete(true)'> Delete Quote </button></li>
+   </ul>
+
+  </div>
   </body>
 </html>
