@@ -9,21 +9,21 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <form #quotesForm='ngForm' *ngIf="hide">
+      <form #quotesForm='ngForm'(ngSubmit)='submitQuote()' *ngIf="hide">
         <div class=" group">
 
           <label id="name">Enter Your Name </label>
           <br>
           <br>
-          <input type="text"style="float:left" >
+          <input type="text"style="float:left" [(ngModel)]="newQuote.description" name="description" #description="ngModel" required>
           <br>
           <br>
           <label>Enter your quote</label>
           <br>
-          <textarea name="name" rows="8" cols="60"></textarea>
+          <textarea name="name" rows="8" cols="60" [(ngModel)]="newQuote.name" name="name" #name="ngModel" required></textarea>
           <br>
         </div>
-        <button (click)="addQuote()" class="btn btn-primary" name="button">Post Quote</button>
+        <button  type="submit" class="btn btn-primary" name="button">Post Quote</button>
       </form>
 
     </div>

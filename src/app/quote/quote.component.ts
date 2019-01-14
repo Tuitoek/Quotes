@@ -1,4 +1,4 @@
-import { Component, OnInit,Input,Output,EventEmitter} from '@angular/core';
+import { Component, OnInit,Input} from '@angular/core';
 import { Quote } from '../quote'
 
 @Component({
@@ -12,7 +12,11 @@ export class QuoteComponent implements OnInit {
     new Quote(2, "Two roads diverged in a wood,and I took the one less travelled by,and that has made all the difference"),
   ]
   @Input() quote: Quote;
-
+  plusQuote(quote){
+    let quoteLength = this.quotes.length;
+    this.quotes.push(quote);
+  }
+;
   constructor() { }
 
   ngOnInit() {
